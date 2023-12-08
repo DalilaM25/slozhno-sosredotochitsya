@@ -1,12 +1,65 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root.theme_dark {
+ 
+}
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  font-family: var(--font, sans-serif);
+  font-size: var(--text-size,18px);
+  font-weight: var(--text-weight,normal);
+  background-color: var(--bg-color,#000028);
+  background:  url(../images/cover-image-dark.png);
+  color: var(--text-color,#F1B2CE);
+ background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: auto; --logo-color: #DB00FF;
+  --main-color: #FF0070;
+  --accent-color: #FF0070;
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --title-color:#000028;
+  --font: 'IBM Plex mono';
+  --text-weight: normal;
+  --title-weight: bold;
+  --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  --text-size: 18px;
+  --logo-line-height: 82.5%;
+  --text-line-height: 130%;
+  --gap: 20px;
 }
+
+
+ @media (prefers-color-scheme: dark) {
+  :root {
+    --logo-color: #DB00FF;
+    --main-color: #FF0070;
+    --accent-color: #FF0070;
+    --bg-color: #000028;
+    --text-color: #F1B2CE;
+    --title-color:#000028;
+    --font: 'IBM Plex mono';
+    --text-weight: normal;
+    --title-weight: bold;
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    --text-size: 18px;
+    --logo-line-height: 82.5%;
+    --text-line-height: 130%;
+    --gap: 20px;
+  }
+    .page {
+    font-family: var(--font, sans-serif);
+    font-size: var(--text-size,18px);
+    font-weight: var(--text-weight,normal);
+    background-color: var(--bg-color,#000028);
+    background:  url(../images/cover-image-dark.png);
+    color: var(--text-color,#F1B2CE);
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    container: page / inline-size;
+    overflow: auto;
+  }
+
+ }
