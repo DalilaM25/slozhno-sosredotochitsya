@@ -1,6 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 a:hover {
-  border-bottom: 2px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
 }
 
 a:focus {
@@ -31,7 +31,8 @@ a:focus-visible {
   position: relative;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   padding: 20px;
   gap: 9vi;
 }
@@ -54,7 +55,7 @@ a:focus-visible {
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline: 1px solid var(--hover-color);
   outline-offset: 1px;
 }
 
@@ -98,7 +99,7 @@ a:focus-visible {
 }
 
 .header__decoration {
-  color: var(--accent-color);
+  color: var(--decor-color);
   text-align: end;
   line-height: 138.889%;
   position: absolute;
@@ -111,11 +112,11 @@ a:focus-visible {
   position: absolute;
   inline-size: 9px;
   block-size: 9px;
-  background-color: var(--main-color);
+  background-color: var(--decor-color);
   border-radius: 50%;
   left: 41px;
   top: 8px;
-  box-shadow: 0px 0px 5px 3px var(--main-color);
+  box-shadow: 0px 0px 5px 3px var(--decor-color);
 }
 
 .decorated-zone::after {
@@ -231,7 +232,8 @@ content__subtitle-comment-text {
   position: relative;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   padding: 20px;
 }
 

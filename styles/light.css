@@ -6,6 +6,8 @@
   --bg-image: url(../images/cover-image-light.png);
   --text-color: #353430;
   --title-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --decor-color: transparent;
   --font: "IBM Plex mono";
   --text-weight: normal;
   --title-weight: bold;
@@ -20,16 +22,6 @@
   background-image: var(--bg-image);
 }
 
-.header__decoration .theme_light {
-  display: none;
-}
-
-@media (width >= 1024px) {
-  .text-shadow {
-    text-shadow: 4px 4px 0 #ff0070;
-  }
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --logo-color: #ffc2e6;
@@ -39,6 +31,8 @@
     --bg-image: url(../images/cover-image-light.png);
     --text-color: #353430;
     --title-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.4);
+    --decor-color: transparent;
     --font: "IBM Plex mono";
     --text-weight: normal;
     --title-weight: bold;
@@ -50,8 +44,5 @@
   }
   .page {
     background-image: var(--bg-image);
-  }
-  .header__decoration {
-    display: none;
   }
 }
