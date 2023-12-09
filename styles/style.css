@@ -1,26 +1,26 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 a:hover {
   border-bottom: 2px solid var(--text-color);
-  }
-  
-  a:focus {
-    outline: none;
-  }
-  
-  a:focus-visible {
-    outline:  1px solid var(--text-color);
-    outline-offset: 1px;
-  }
+}
+
+a:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 1px solid var(--text-color);
+  outline-offset: 1px;
+}
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--font, sans-serif);
-  font-size: var(--text-size,18px);
-  font-weight: var(--text-weight,normal);
-  background-color: var(--bg-color,#000028);
-  background:  url(../images/cover-image-dark.png);
-  color: var(--text-color,#F1B2CE);
- background-position: center;
+  font-size: var(--text-size, 18px);
+  font-weight: var(--text-weight, normal);
+  background-color: var(--bg-color, #000028);
+  background: var(--bg-image);
+  color: var(--text-color, #f1b2ce);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -34,36 +34,36 @@ a:hover {
   min-block-size: 100vh;
   padding: 20px;
   gap: 9vi;
-  
 }
 
 .header__theme-menu-list {
-display: flex;
-align-items: flex-start;
-justify-content: center;
-gap: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
 }
 
 .header__theme-menu-button {
-background-color: transparent;
-border: none;
-color: var(--main-color);
-text-align: center;
-line-height: 100%;
-padding: 0px 12px 4px;
+  background-color: transparent;
+  border: none;
+  color: var(--main-color);
+  text-align: center;
+  line-height: 100%;
+  padding: 0px 12px 4px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
-outline: 1px solid rgba(255, 0, 112, 0.40);
-outline-offset: 1px;
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline-offset: 1px;
 }
 
 .header__theme-menu-button:focus {
-outline: none;
+  outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
-border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
 }
 
 .header__theme-menu-button_active {
@@ -87,40 +87,39 @@ border-bottom: 1px solid var(--main-color);
 .header__description {
   font-weight: var(--title-weight);
   place-self: start end;
-  inline-size: clamp(355px,48vi,491px);
-  block-size: clamp(71px,9vb,117px);
-
+  inline-size: clamp(355px, 48vi, 491px);
+  block-size: clamp(71px, 9vb, 117px);
 }
 
-.title-decor {  
+.title-decor {
   line-height: var(--text-line-height);
   color: var(--title-color);
   background-color: var(--accent-color);
 }
 
 .header__decoration {
-color:var(--accent-color);
-text-align: end;
-line-height: 138.889%;
-position: absolute;
-right: 4.5vi;
-top: 1.9vi;
+  color: var(--accent-color);
+  text-align: end;
+  line-height: 138.889%;
+  position: absolute;
+  right: 4.5vi;
+  top: 1.9vi;
 }
 
 .header__decoration::before {
-content: '';
-position: absolute;
-inline-size: 9px;
-block-size: 9px;
-background-color: var(--main-color);
-border-radius: 50%;
-left: 41px;
-top: 8px;
-box-shadow: 0px 0px 5px 3px var(--main-color);
+  content: "";
+  position: absolute;
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  left: 41px;
+  top: 8px;
+  box-shadow: 0px 0px 5px 3px var(--main-color);
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
@@ -130,7 +129,7 @@ box-shadow: 0px 0px 5px 3px var(--main-color);
   top: 1.9vi;
 }
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
@@ -142,25 +141,25 @@ box-shadow: 0px 0px 5px 3px var(--main-color);
 
 .content {
   padding: 0vi 20px;
- margin: 60px 0px;
+  margin: 60px 0px;
 }
 
 .content__text-block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap:  var(--gap);
+  gap: var(--gap);
   margin-bottom: 85px;
 }
 
 .content__text-block-row {
-grid-column: 2 / -1;
-} 
+  grid-column: 2 / -1;
+}
 
 .content__title {
-color: var(--main-color);
-font-size: var(--text-size);
-font-weight: var(--title-weight);
-line-height: var(--text-line-height);
+  color: var(--main-color);
+  font-size: var(--text-size);
+  font-weight: var(--title-weight);
+  line-height: var(--text-line-height);
 }
 
 .content__title-column {
@@ -178,10 +177,14 @@ line-height: var(--text-line-height);
 }
 
 .content__subtitle-normal {
-  font-weight: var(--text-weight)
+  font-weight: var(--text-weight);
 }
 
 .content__subtitle-comment {
+  margin-bottom: var(--gap);
+}
+
+content__subtitle-comment-text {
   margin-bottom: var(--gap);
 }
 
@@ -189,10 +192,10 @@ line-height: var(--text-line-height);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-inline-size: calc(100vi - 1.9vi);
-  grid-template-areas: 
-  "sunset sunset ice-cream"
-  "tape books ice-cream"
-  "tape street street";
+  grid-template-areas:
+    "sunset sunset ice-cream"
+    "tape books ice-cream"
+    "tape street street";
   gap: var(--gap);
 }
 
@@ -240,43 +243,40 @@ line-height: var(--text-line-height);
   grid-row: 1 / -1;
 }
 
-
 @media (768px <= width < 1024px) {
- .header {
-  gap:9vh;
- }
+  .header {
+    gap: 9vh;
+  }
   .header__theme-menu-list {
-   flex-direction: column;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 10px;
-  
-    }
-    .header__theme-menu {
-      display: flex;
-      justify-content: flex-end;
-      flex-direction: row;
-      align-items: flex-end;
-    }
-    .content__text-block-column {
-      grid-column: auto;
-      grid-column: 1 / -1;
+  }
+  .header__theme-menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .content__text-block-column {
+    grid-column: auto;
+    grid-column: 1 / -1;
     grid-row: auto;
+  }
+  .header__decoration {
+    right: 6vi;
+    top: 2.5vi;
+  }
+  .content__paragraph {
+    word-spacing: 1px;
+  }
 }
-.header__decoration {
-  color: var(--accent-color);
-  text-align: end;
-  line-height: 138.889%;
-  position: absolute;
-  right: 6vi;
-  top: 2.5vi;
-}
-    }
 
-    @media (375px <= width <= 768px) {
+@media (375px <= width < 768px) {
   .header {
-   padding: 10px;
-   grid-template-rows: 225px 1fr 170px;
+    padding: 10px;
+    grid-template-rows: 225px 1fr 170px;
     gap: 1vi;
   }
   .header__title {
@@ -291,49 +291,56 @@ line-height: var(--text-line-height);
 
   .header__theme-menu-list {
     flex-direction: column;
-     align-items: flex-start;
-     justify-content: center;
-     gap: 10px;
-   
-     }
-     .header__theme-menu {
-       display: flex;
-       justify-content: flex-end;
-       flex-direction: row;
-       align-items: center;
-     }
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+  .header__theme-menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+  }
 
-     .header__decoration {
-      right: 10vi;
-      top: 2.5vi;
+  .header__decoration {
+    right: 10vi;
+    top: 2.5vi;
   }
 
   .header__description {
     block-size: 115px;
-}
-.content {
+  }
+  .content {
     padding: 0vi 10px;
-  margin-top: 40px;
-}
+    margin: 40px 0;
+  }
 
-.content__text-block {
- display: flex;
- flex-direction: column;
- gap: 22.5px; 
- margin-bottom: 50px;
-}
+  .content__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 22.5px;
+    margin-bottom: 50px;
+  }
 
-.content__galary-block {
-  grid-template-areas: 
-  "sunset sunset sunset"
-  "ice-cream ice-cream ice-cream"
-  "tape tape tape "
-  "books books books"
-  "street street street";
-  gap: 10px;
-}
+  .content__galary-block {
+    grid-template-areas:
+      "sunset sunset sunset"
+      "ice-cream ice-cream ice-cream"
+      "tape tape tape "
+      "books books books"
+      "street street street";
+    gap: 10px;
+  }
 
-.footer {
-  padding: 10px;
+  .content__subtitle-comment {
+    margin-bottom: 10px;
+  }
+
+  .content__subtitle-comment-text {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
 }
-    }

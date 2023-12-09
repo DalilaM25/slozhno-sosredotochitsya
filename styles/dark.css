@@ -1,65 +1,48 @@
-:root.theme_dark {
- 
-}
-
-.page.theme_dark {
-  font-family: var(--font, sans-serif);
-  font-size: var(--text-size,18px);
-  font-weight: var(--text-weight,normal);
-  background-color: var(--bg-color,#000028);
-  background:  url(../images/cover-image-dark.png);
-  color: var(--text-color,#F1B2CE);
- background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: auto; --logo-color: #DB00FF;
-  --main-color: #FF0070;
-  --accent-color: #FF0070;
+:root .theme_dark {
+  --logo-color: #db00ff; /*большое лого*/
+  --main-color: #ff0070; /*кнопки тем и заголовки */
+  --accent-color: #ff0070; /*цветной фон у текста  и тень лого*/
   --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --title-color:#000028;
-  --font: 'IBM Plex mono';
+  --bg-image: url(../images/cover-image-dark.png);
+  --text-color: #f1b2ce; /*текстовые абзацы*/
+  --title-color: #000028; /*заголовки на цветном фоне*/
+  --font: "IBM Plex mono";
   --text-weight: normal;
   --title-weight: bold;
-  --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --text-size: 18px;
   --logo-line-height: 82.5%;
   --text-line-height: 130%;
   --gap: 20px;
 }
 
+.page .theme_dark {
+  background-image: var(--bg-image);
+}
 
- @media (prefers-color-scheme: dark) {
+.header__decoration .theme_dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
   :root {
-    --logo-color: #DB00FF;
-    --main-color: #FF0070;
-    --accent-color: #FF0070;
+    --logo-color: #db00ff;
+    --main-color: #ff0070;
+    --accent-color: #ff0070;
     --bg-color: #000028;
-    --text-color: #F1B2CE;
-    --title-color:#000028;
-    --font: 'IBM Plex mono';
+    --bg-image: url(../images/cover-image-dark.png);
+    --text-color: #f1b2ce;
+    --title-color: #000028;
+    --font: "IBM Plex mono";
     --text-weight: normal;
     --title-weight: bold;
-    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --text-size: 18px;
     --logo-line-height: 82.5%;
     --text-line-height: 130%;
     --gap: 20px;
   }
-    .page {
-    font-family: var(--font, sans-serif);
-    font-size: var(--text-size,18px);
-    font-weight: var(--text-weight,normal);
-    background-color: var(--bg-color,#000028);
-    background:  url(../images/cover-image-dark.png);
-    color: var(--text-color,#F1B2CE);
-   background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    container: page / inline-size;
-    overflow: auto;
+  .page {
+    background-image: var(--bg-image);
   }
-
- }
+}

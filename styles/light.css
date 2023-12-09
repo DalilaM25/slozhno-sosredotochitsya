@@ -1,36 +1,26 @@
-:root.theme_light {
-  
-}
-
-.page.theme_light {
-  background-color: var(--bg-color, #fff1f7);
-  background: url(../images/cover-image-light.png);
-  color: var(--text-color, #353430);
-  font-family: var(--font, sans-serif);
-  font-size: var(--text-size,18px);
-  font-weight: var(--text-weight,normal);
- background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  container: page / inline-size;
-  overflow: auto; --logo-color: #ffc2e6;
+:root .theme_light {
+  --logo-color: #ffc2e6;
   --main-color: #353430;
   --accent-color: #ff8dcb;
   --bg-color: #fff1f7;
+  --bg-image: url(../images/cover-image-light.png);
   --text-color: #353430;
-  --title-color:#353430;
-  --font: 'IBM Plex mono';
+  --title-color: #353430;
+  --font: "IBM Plex mono";
   --text-weight: normal;
   --title-weight: bold;
-  --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --text-size: 18px;
   --logo-line-height: 82.5%;
   --text-line-height: 130%;
   --gap: 20px;
 }
 
-.header__decoration.theme_light {
+.page .theme_light {
+  background-image: var(--bg-image);
+}
+
+.header__decoration .theme_light{
   display: none;
 }
 
@@ -46,29 +36,20 @@
     --main-color: #353430;
     --accent-color: #ff8dcb;
     --bg-color: #fff1f7;
+    --bg-image: url(../images/cover-image-light.png);
     --text-color: #353430;
-    --title-color:#353430;
-    --font: 'IBM Plex mono';
+    --title-color: #353430;
+    --font: "IBM Plex mono";
     --text-weight: normal;
     --title-weight: bold;
-    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --text-size: 18px;
     --logo-line-height: 82.5%;
     --text-line-height: 130%;
     --gap: 20px;
   }
   .page {
-    background-color: var(--bg-color, #fff1f7);
-    background: url(../images/cover-image-light.png);
-    color: var(--text-color, #353430);
-    font-family: var(--font, sans-serif);
-    font-size: var(--text-size,18px);
-    font-weight: var(--text-weight,normal);
-   background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: auto;
+    background-image: var(--bg-image);
   }
   .header__decoration {
     display: none;
