@@ -20,7 +20,7 @@
   background-image: var(--bg-image);
 }
 
-.header__decoration .theme_light{
+.header__decoration .theme_light {
   display: none;
 }
 
