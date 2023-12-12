@@ -7,7 +7,6 @@
   --text-color: #353430;
   --title-color: #353430;
   --hover-color: rgba(50, 49, 45, 0.4);
-  --decor-color: transparent;
   --font: "IBM Plex mono";
   --text-weight: normal;
   --title-weight: bold;
@@ -18,9 +17,13 @@
   --gap: 20px;
 }
 
-.page .theme_light {
+.page.theme_light {
   background-image: var(--bg-image);
 }
+.page.theme_light .header__decoration {
+  display: none;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -32,7 +35,6 @@
     --text-color: #353430;
     --title-color: #353430;
     --hover-color: rgba(50, 49, 45, 0.4);
-    --decor-color: transparent;
     --font: "IBM Plex mono";
     --text-weight: normal;
     --title-weight: bold;
@@ -45,4 +47,5 @@
   .page {
     background-image: var(--bg-image);
   }
+
 }

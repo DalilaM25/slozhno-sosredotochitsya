@@ -99,7 +99,7 @@ a:focus-visible {
 }
 
 .header__decoration {
-  color: var(--decor-color);
+  color: var(--main-color);
   text-align: end;
   line-height: 138.889%;
   position: absolute;
@@ -112,11 +112,11 @@ a:focus-visible {
   position: absolute;
   inline-size: 9px;
   block-size: 9px;
-  background-color: var(--decor-color);
+  background-color: var(--main-color);
   border-radius: 50%;
   left: 41px;
   top: 8px;
-  box-shadow: 0px 0px 5px 3px var(--decor-color);
+  box-shadow: 0px 0px 5px 3px var(--main-color);
 }
 
 .decorated-zone::after {
@@ -286,7 +286,7 @@ content__subtitle-comment-text {
   }
 }
 
-@media (375px <= width < 768px) {
+@media (width < 768px) {
   .header {
     padding: 10px;
     grid-template-rows: 225px 1fr 170px;
