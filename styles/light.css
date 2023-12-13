@@ -21,7 +21,7 @@
   background-image: var(--bg-image);
 }
 .page.theme_light .header__decoration {
-  display: none;
+  visibility: hidden;
 }
 
 
@@ -47,5 +47,7 @@
   .page {
     background-image: var(--bg-image);
   }
-
+  .header__decoration {
+    visibility: hidden;
+  }
 }

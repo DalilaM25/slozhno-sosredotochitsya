@@ -17,8 +17,11 @@
   --gap: 20px;
 }
 
-.page .theme_dark {
+.page.theme_dark {
   background-image: var(--bg-image);
+}
+.page.theme_dark .header__decoration {
+  visibility: visible;
 }
 
 @media (prefers-color-scheme: dark) {
